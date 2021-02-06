@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .box{
+    width: 80%;
+    height: 100px;
+    border: 1px solid #000000;
+    margin: 1rem;
+    .content{
+      background-color: aquamarine;
+    }
+  }
+}
