@@ -95,3 +95,38 @@ a .button:nth-child(1):active {
           box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 4px 4px 8px rgba(0, 0, 0, 0.1);
   color: #79e3b6;
 }
+
+.a {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #9294f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+          box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+  -webkit-transition: all 650ms;
+  transition: all 650ms;
+}
